@@ -479,8 +479,6 @@ void _glfwUpdateGamepadGUIDLinux(char* guid)
 {
 }
 
-#endif // GLFW_BUILD_LINUX_JOYSTICK
-
 int _glfwPlatformSetJoystickRumble(_GLFWjoystick* js, float slowMotorIntensity, float fastMotorIntensity)
 {
     _GLFWjoystickLinux *linjs = &js->linjs;
@@ -509,3 +507,5 @@ int _glfwPlatformSetJoystickRumble(_GLFWjoystick* js, float slowMotorIntensity, 
 
     return GLFW_TRUE;
 }
+
+#endif // GLFW_BUILD_LINUX_JOYSTICK

@@ -54,7 +54,7 @@ void _glfwUpdateGamepadGUIDNull(char* guid)
 {
 }
 
-int _glfwPlatformSetJoystickRumble(_GLFWjoystick* js, float slowMotorIntensity, float fastMotorIntensity)
+int _glfwPlatformSetJoystickRumbleNull(_GLFWjoystick* js, float slowMotorIntensity, float fastMotorIntensity)
 {
     return GLFW_FALSE;
 }

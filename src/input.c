@@ -1486,7 +1486,7 @@ GLFWAPI int glfwSetJoystickRumble(int jid, float slowMotorIntensity, float fastM
     }
 
     js = _glfw.joysticks + jid;
-    if (!js->present)
+    if (!js->connected)
         return GLFW_FALSE;
 
     slowMotorIntensity = slowMotorIntensity < 0.0f ? 0.0f : slowMotorIntensity;
