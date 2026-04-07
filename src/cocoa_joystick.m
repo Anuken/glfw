@@ -481,5 +481,10 @@ void _glfwUpdateGamepadGUIDCocoa(char* guid)
     }
 }
 
+int _glfwPlatformSetJoystickRumble(_GLFWjoystick* js, float slowMotorIntensity, float fastMotorIntensity)
+{
+    return GLFW_FALSE;
+}
+
 #endif // _GLFW_COCOA
 

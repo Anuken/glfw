@@ -1,6 +1,7 @@
 # The canonical out-of-tree build subdirectory
 build
 build-*
+.idea/
 
 # Visual Studio clutter
 _ReSharper*

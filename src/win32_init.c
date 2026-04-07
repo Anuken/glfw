@@ -128,6 +128,8 @@ static GLFWbool loadLibraries(void)
                     _glfwPlatformGetModuleSymbol(_glfw.win32.xinput.instance, "XInputGetCapabilities");
                 _glfw.win32.xinput.GetState = (PFN_XInputGetState)
                     _glfwPlatformGetModuleSymbol(_glfw.win32.xinput.instance, "XInputGetState");
+                _glfw.win32.xinput.SetState = (PFN_XInputSetState)
+                    _glfwPlatformGetModuleSymbol(_glfw.win32.xinput.instance, "XInputSetState");
 
                 break;
             }

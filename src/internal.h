@@ -896,6 +896,7 @@ extern _GLFWlibrary _glfw;
 //////                       GLFW platform API                      //////
 //////////////////////////////////////////////////////////////////////////
 
+int _glfwPlatformSetJoystickRumble(_GLFWjoystick* js, float slowMotorIntensity, float fastMotorIntensity);
 void _glfwPlatformInitTimer(void);
 uint64_t _glfwPlatformGetTimerValue(void);
 uint64_t _glfwPlatformGetTimerFrequency(void);
